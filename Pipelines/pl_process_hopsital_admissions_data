@@ -1,0 +1,37 @@
+{
+    "name": "pl_process_hopsital_admissions_data",
+    "properties": {
+        "activities": [
+            {
+                "name": "dfl_hospital_admissions",
+                "type": "ExecuteDataFlow",
+                "dependsOn": [],
+                "policy": {
+                    "timeout": "0.12:00:00",
+                    "retry": 0,
+                    "retryIntervalInSeconds": 30,
+                    "secureOutput": false,
+                    "secureInput": false
+                },
+                "userProperties": [],
+                "typeProperties": {
+                    "dataflow": {
+                        "referenceName": "dfl_hospital_admissions",
+                        "type": "DataFlowReference"
+                    },
+                    "compute": {
+                        "coreCount": 8,
+                        "computeType": "General"
+                    },
+                    "traceLevel": "Fine"
+                }
+            }
+        ],
+        "folder": {
+            "name": "Process(transform)"
+        },
+        "annotations": [],
+        "lastPublishTime": "2026-09-20T22:52:16Z"
+    },
+    "type": "Microsoft.DataFactory/factories/pipelines"
+}
