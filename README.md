@@ -1,2 +1,3 @@
 # Data-Engineering-Project
-Data Engineering Project to design scalable solution to ingest, process and orchestrate Covid 19 data for Europe region
+Data Engineering Project to design scalable solution to ingest, process and orchestrate Covid 19 data for Europe region. 
+This is an end‑to‑end data engineering solution using Azure Data Factory by building multiple pipelines for data processing and loading into various sinks. The workflows used Azure Dta Factory as an integration tool alongwith SQL, data flows, pyspark notebook in Databricks to handel complex transformations and other requirements of project. ADF handled orchestration, dependency management, and trigger‑based automation to ensure consistent data flow, and enabled scalable, repeatable ETL operations across environments.
